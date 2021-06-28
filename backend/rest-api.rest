@@ -1,0 +1,20 @@
+POST http://localhost:5000/api/v1/auth/register
+content-type: application/json
+
+{  
+    "firstName": "Nderim",
+    "lastName": "Krasniqi",
+    "email": "nderim@gmail.com",
+    "password": "nderim321",
+    "confirmPassword": "nderim321"
+}
+
+###
+
+POST http://localhost:5000/api/v1/auth/login
+content-type: application/json
+
+{  
+    "email": "nderim@gmail.com",
+    "password": "nderim321"
+}
