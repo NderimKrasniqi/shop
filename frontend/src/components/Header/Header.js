@@ -4,10 +4,10 @@ import Icons from './HeaderIcons';
 import styles from './Header.module.css';
 const Header = () => {
   return (
-    <div className={styles.container}>
+    <header className={styles.container}>
       <Title title='Shop' />
       <Icons />
-    </div>
+    </header>
   );
 };
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   SearchOutlined,
   UserOutlined,
@@ -28,10 +29,9 @@ const HeaderIcon = () => {
           <MenuOutlined className={styles.icon} onClick={handleSideBar} />
         )}
         <div className={`${sideBar ? styles.sideBar : styles.sideBarNone}`}>
-          <a href='#'>About</a>
-          <a href='#'>Services</a>
-          <a href='#'>Clients</a>
-          <a href='#'>Contact</a>
+          <Link to='/login'>Login</Link>
+          <Link to='/register'>Register</Link>
+          <Link to='/about'>About</Link>
         </div>
       </div>
     </div>
