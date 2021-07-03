@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import styles from './LoginScreen.module.css';
 
 const LoginScreen = () => {
-  return <div>Login</div>;
+  return (
+    <Fragment>
+      <div className={styles.container}></div>
+    </Fragment>
+  );
 };
 
 export default LoginScreen;

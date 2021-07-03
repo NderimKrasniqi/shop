@@ -3,15 +3,14 @@
   margin: 0;
   padding: 0;
 }
-/* BACKGROUND COLOR : #E2DAD7 */
-/* ACCENT COLOR : #403634 */
-/* TEXT COLOR : #261F1E */
+
 body {
-  padding: 30px 150px;
   background-color: #e2dad7;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/* BACKGROUND COLOR : #E2DAD7 */
+/* ACCENT COLOR : #403634 */
+/* TEXT COLOR : #261F1E */
 h1,
 h2,
 h3,
@@ -19,9 +18,11 @@ h4,
 h5 {
   color: #403634;
 }
-
+.container {
+  padding-inline: 150px;
+}
 @media (max-width: 768px) {
-  body {
-    padding: 10px 30px;
+  .container {
+    padding: 0px 30px;
   }
 }

@@ -1,12 +1,16 @@
 import React from 'react';
 import Title from './Title';
-import Icons from './HeaderIcons';
+import HeaderIcons from './HeaderIcons';
 import styles from './Header.module.css';
+import SideBar from './SideBar';
 const Header = () => {
   return (
     <header className={styles.container}>
       <Title title='Shop' />
-      <Icons />
+      <div className={styles.sideBar}>
+        <HeaderIcons />
+        <SideBar />
+      </div>
     </header>
   );
 };

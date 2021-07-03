@@ -9,11 +9,11 @@ import ShopScreen from './pages/ShopScreen';
 import AboutScreen from './pages/AboutScreen';
 import RegisterScreen from './pages/RegisterScreen';
 
-import './App.module.css';
+import styles from './App.module.css';
 
 const App = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <Router>
         <Header />
         <Switch>
