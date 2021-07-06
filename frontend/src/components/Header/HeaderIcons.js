@@ -2,7 +2,7 @@ import React from 'react';
 import {
   SearchOutlined,
   UserOutlined,
-  ShoppingCartOutlined,
+  ShoppingOutlined,
 } from '@ant-design/icons';
 import styles from './HeaderIcons.module.css';
 const HeaderIcons = () => {
@@ -11,7 +11,7 @@ const HeaderIcons = () => {
       <div className={styles.icons}>
         <SearchOutlined className={styles.icon} />
         <UserOutlined className={styles.icon} />
-        <ShoppingCartOutlined className={styles.icon} />
+        <ShoppingOutlined className={styles.icon} />
       </div>
     </div>
   );

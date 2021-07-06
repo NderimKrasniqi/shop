@@ -6,6 +6,7 @@ import helmet from 'helmet';
 import cors from 'cors';
 import compress from 'compression';
 import { limiter } from '../middleware/authRateLimiter.js';
+import { notFound, errorHandler } from '../middleware/errorHandler.js';
 import routes from '../routes/index.js';
 
 const app = express();
@@ -23,5 +24,7 @@ if (process.env.NODE_ENV !== 'development') {
 }
 
 app.use('/api/v1', routes);
+app.use(notFound);
+app.use(errorHandler);
 
 export default app;
